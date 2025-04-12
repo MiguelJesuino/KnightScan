@@ -8,10 +8,6 @@ init(autoreset=True)
 
 def parse_ports(port_str):
     if '-' in port_str:
-        # o argumento que estou recebendo no terminal é assim: primeiraPorta-UltimaPorta
-        # pra transformar isso em algo legivel pro python tenho que tirar esse "-" e transformar o range de portas em uma lista de portas
-        # para isso uso o strip pra tirar o traço, coloco o valor inicial em uma variavel e o valor final em outra
-        # depois retorno uma lista de elementos usando list(range(valorInicial, valorFinal+1)) o +1 é pq o range termina 1 numero antes do valor final
         start, end = map(int, port_str.split('-'))
         return list(range(start, end+1))
     else:
