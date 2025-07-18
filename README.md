@@ -40,7 +40,7 @@
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/KnightScan.git
+git clone https://github.com/MiguelJesuino/KnightScan.git
 cd KnightScan
 python -m venv .venv
 ```
